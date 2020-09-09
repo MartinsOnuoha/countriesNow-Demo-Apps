@@ -1,0 +1,51 @@
+body {
+  background: #FBEDE0;
+  color: #5a393e;
+  font-family: 'Playfair Display', serif;
+}
+h3 {
+  padding: 10px;
+}
+.cn__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.bshadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.04);
+}
+.cn__card {
+  border-radius: 5px;
+  height: 100px;
+  width: 300px;
+  padding: 10px;
+}
+.center {
+  text-align: center;
+}
+.muted {
+  opacity: 0.5;
+}
+.mauto {
+  margin: 0 auto;
+}
+select {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  opacity: 0.5;
+}
+select:focus {
+  outline: none;
+}
+.cn__bg-white {
+  background: #ffffff;
+}
+p {
+  font-size: 14px
+}
+img {
+  border-radius: 7px;
+}

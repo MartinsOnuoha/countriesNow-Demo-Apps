@@ -1,0 +1,97 @@
+:root {
+  --primary: #5a393e;
+  --secondary: #FBEDE0;
+  --fontFamily: 'Playfair Display', serif;
+  --fullHeight: 100vh;
+  --mt10: 10px;
+  --bs-dark: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2);
+  --bs-light: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.04);
+  --br-3: 3px;
+  --d-flex: flex;
+}
+
+body {
+  background: var(--secondary);
+  color: var(--primary);
+  font-family: var(--fontFamily);
+}
+.cn__container {
+  display: var(--d-flex);
+  flex-direction: column;
+  height: var(--fullHeight);
+}
+.cn__content {
+  margin-top: var(--mt10);
+}
+.cn__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cn__row .cn__col {
+  margin: var(--mt10);
+  transition: 0.4s;
+  border-radius: var(--br-3);
+}
+.cn__col:hover {
+  box-shadow: var(--bs-dark);
+}
+.bshadow {
+  box-shadow: var(--bs-light);
+}
+.cn__card {
+  border-radius: 5px;
+  height: 200px;
+  width: 180px;
+  padding: 10px;
+}
+.country__name {
+  margin-bottom: 20px;
+  font-size: 12px;
+  min-height: 32px;
+}
+.country__cities {
+  overflow: scroll;
+  height: inherit;
+}
+.action__btn {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: var(--br-3);
+  transition: 0.4s;
+  outline: none;
+  border: none;
+}
+.action__btn:hover {
+  background: #fff;
+  color: #5a393e;
+}
+.center {
+  text-align: center;
+}
+.muted {
+  opacity: 0.5;
+}
+.mauto {
+  margin: 0 auto;
+}
+.cn__bg-white {
+  background: #ffffff;
+}
+.cn__bg-brown {
+  background: #5a393e;
+  color: #fff;
+}
+.no-border {
+  border: 0;
+}
+.country__img {
+  height: 100px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--br-3);
+}
