@@ -1,0 +1,30 @@
+{
+  "name": "countries-now-examples",
+  "version": "1.0.0",
+  "description": "A List of example applications using the [CountriesNow API](https://countriesnow.space/)",
+  "main": "index.js",
+  "scripts": {
+    "make:commit": "./node_modules/.bin/cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinsOnuoha/countriesNow-Demo-Apps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinsOnuoha/countriesNow-Demo-Apps/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  },
+  "homepage": "https://github.com/MartinsOnuoha/countriesNow-Demo-Apps#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-emoji": "^1.2.2"
+  }
+}
