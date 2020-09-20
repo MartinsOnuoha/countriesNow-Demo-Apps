@@ -1,14 +1,14 @@
 const BASE_URL = 'https://countriesnow.space/api/v0.1/countries'
-const row = document.querySelector('.cn__row');
+const row = document.querySelector('.cn__row')
 let countries = []
 
-let getCountriesAndFlags = async () => {
-  let response = await fetch(`${BASE_URL}/flag/images`).then(response => response.json())
+const getCountriesAndFlags = async () => {
+  const response = await fetch(`${BASE_URL}/flag/images`).then(response => response.json())
   const { data } = response
   countries = data
 
-  countries.forEach(country => {
-    let col = document.createElement('div')
+  countries.forEach((country) => {
+    const col = document.createElement('div')
     col.classList.add('cn__col')
     col.innerHTML = `
       <div class="cn__card cn__bg-white center" id="${country.name}">
@@ -23,19 +23,20 @@ let getCountriesAndFlags = async () => {
       </div>
     `
     row.appendChild(col)
-  });
+  })
 }
 
-let viewCities = async (e) => {
-  let ul = document.createElement('ul')
-  let country = e.parentElement.parentElement.id
-  let { children } = e.parentElement.parentElement
+// eslint-disable-next-line
+const viewCities = async (e) => {
+  const ul = document.createElement('ul')
+  const country = e.parentElement.parentElement.id
+  const { children } = e.parentElement.parentElement
 
-  children[0].style.display = 'none';
-  children[1].style.display = 'none';
-  children[2].style.display = 'none';
+  children[0].style.display = 'none'
+  children[1].style.display = 'none'
+  children[2].style.display = 'none'
 
-  let response = await fetch(`${BASE_URL}/cities`, {
+  const response = await fetch(`${BASE_URL}/cities`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -44,21 +45,18 @@ let viewCities = async (e) => {
     body: JSON.stringify({ country })
   }).then(response => response.json())
 
-
   if (!response.error) {
-    let { data } = response
+    const { data } = response
     data.forEach((city) => {
-      let li = document.createElement('li')
+      const li = document.createElement('li')
       li.innerHTML = city
       ul.appendChild(li)
     })
     children[3].appendChild(ul)
-    console.log(data)
   }
-  console.log(e.parentElement.parentElement.children)
-
 }
 
+// eslint-disable-next-line
 let close = () => {
 
 }

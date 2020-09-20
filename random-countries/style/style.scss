@@ -1,0 +1,65 @@
+$brown-1: #F7EBEC;
+$brown-2: #856A5D;
+$brown-3: #60463B;
+$gold: #F2BB05;
+$dark: #2E3138;
+$primary: #5a393e;
+$secondary: #FBEDE0;
+$fontFamily: 'Playfair Display', serif;
+$bs-light: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.04);
+
+body {
+  background-color: $secondary;
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
+  color: $primary;
+
+  #app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .description {
+      margin-top: 0;
+    }
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &__counter {
+        h1 {
+          font-size: 6rem;
+          margin: 0;
+        }
+        &-green {
+          left: 54rem;
+          top: 10rem;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #4CAF50;
+          height: 15px;
+          width: 15px;
+        }
+      }
+      &__card {
+        margin-top: 20px;
+        border-radius: 7px;
+        background: #fff;
+        text-align: center;
+        padding: 10px;
+        height: 250px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        box-shadow: $bs-light;
+        &-flag {
+          font-size: 8rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

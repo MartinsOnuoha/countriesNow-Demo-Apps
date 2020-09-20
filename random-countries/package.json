@@ -1,0 +1,20 @@
+{
+  "name": "random-countries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel watch ./index.html --no-cache",
+    "serve": "parcel ./index.html --open",
+    "build:verbose": "parcel build ./index.html --detailed-report",
+    "publish": "rm -rf ./cache ./dist ./docs/* && parcel build ./index.html --detailed-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/compat-data": "^7.9.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.11"
+  }
+}
