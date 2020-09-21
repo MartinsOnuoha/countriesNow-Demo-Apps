@@ -15,7 +15,9 @@ A List of example applications using the [CountriesNow API](https://countriesnow
 ## Cities Viewer
 
 - Demo [here](https://cities-viewer.surge.sh/)
+![app](https://github.com/MartinsOnuoha/countriesNow-Demo-Apps/blob/master/cities-viewer/img/test.gif?raw=true)
 
 ## Random Countries
 
 - Demo Countries [here](https://random-country.surge.sh/)
+![app](https://github.com/MartinsOnuoha/countriesNow-Demo-Apps/blob/master/random-countries/img/test.gif?raw=true)
